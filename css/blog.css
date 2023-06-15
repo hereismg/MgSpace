@@ -129,7 +129,7 @@ body{
     transition: 200ms;
 }
 
-.outline > .bar {
+.outline > .line {
     height: 8px;
     width: 50%;
     background: rgba(0, 0, 0, 0.47);
@@ -139,7 +139,7 @@ body{
     transition: 200ms;
 }
 
-.outline > .bar:hover{
+.outline > .line:hover{
     cursor: pointer;
     background: rgb(0, 0, 0);
 }

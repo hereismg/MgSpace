@@ -2,7 +2,7 @@
 let chapter = document.querySelectorAll(".chapter");
 let main = document.querySelector(".main");
 let outline = document.querySelector(".outline");
-let outlineBar = outline.querySelector(".bar");
+let outlineLine = outline.querySelector(".line");
 let outlineText = outline.querySelector(".text");
 let outline_status = 1;
 let list = outline.querySelectorAll(".item");
@@ -25,7 +25,7 @@ for (let i=0; i<chapter.length; i++){
     }
 }
 
-outlineBar.onclick = function (){
+outlineLine.onclick = function (){
     if (outline_status === 1){
         outline_status = 0;
         outline.style.transform = "translate(0, 850px)";

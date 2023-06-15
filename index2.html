@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>欢迎来到墨空间</title>
-    <link rel="stylesheet" href="css/mgSpace.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/mgSpace.css">
 </head>
-<body>
+<body class="mgSpace">
 
-<div class="bar">
-
+<div class="hello">
+    <div class="title">欢迎来到墨空间</div>
+    <video autoplay loop muted><source src="res/hello.mp4"></video>
 </div>
 
-<div class="mgSpace">
-    <div class="mgSpace-card">
-        <div class="line"></div>
-        <div class="ball"></div>
-    </div>
-    <div class="mgSpace-card">
-        <div class="line"></div>
-        <div class="ball"></div>
-    </div>
-    <div class="mgSpace-card">\
-        <div class="ball"></div>
-    </div>
+<div class="circulating">
+    <div class="left"></div>
+    <div class="right"></div>
+
+    <label>
+        <input type="radio" name="circul" value="1">
+    </label>
+    <label>
+        <input type="radio" name="circul" value="2">
+    </label>
+    <div class="card">1</div>
+    <div class="card">1</div>
+</div>
+
+<div class="bar">
+    <ul class="left">
+        <li>主页</li>
+        <li>文集
+            <ul>
+                <li>太阳升起时的样子</li>
+                <li>花生蛋糕</li>
+                <li>制作指南</li>
+            </ul>
+        </li>
+        <li></li>
+    </ul>
+
+    <div class="ball"></div>
+
+    <ul class="right">
+        <li>关于</li>
+        <li>其他</li>
+    </ul>
 </div>
 
 </body>
