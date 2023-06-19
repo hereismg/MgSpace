@@ -3,11 +3,17 @@
     padding: 0;
     font-family: "思源黑体 CN", serif;
 }
-
+*::selection{
+    background: rgba(140, 152, 134, 0.59);
+}
 body, html{
     height: 100%;
     /*background: #E5F9DB;*/
     /*background: #87dad8;*/
+}
+
+body{
+    padding-bottom: 50px;
 }
 
 .mimesic-button{
@@ -111,8 +117,8 @@ body, html{
 .bar > ul > li:hover {
     cursor: pointer;
     /*background: #485434;*/
-    background: inherit;
-    box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);
+    background: rgba(147, 150, 142, 0.21);
+    /*box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);*/
     /*transform: scale(105%) translate(0, -10px);*/
 }
 .bar > ul > li:hover:before{
@@ -139,3 +145,14 @@ body, html{
     border-top-right-radius: 15px;
 }
 
+.copyright{
+    width: 90%;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(5px);
+
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    border-radius: 40px;
+}

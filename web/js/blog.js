@@ -5,12 +5,13 @@ let outline = document.querySelector(".outline");
 let outlineLine = outline.querySelector(".line");
 let outlineText = outline.querySelector(".text");
 let outline_status = 1;
-let list = outline.querySelectorAll(".item");
 
 console.log(chapter)
 
 for (let i=0; i<chapter.length; i++){
     let title = chapter[i].querySelector(".title");
+    if (title === null) continue
+
     title.onclick = function (){
         let text = chapter[i].querySelector(".text");
         if (text.style.display === "none"){
@@ -20,10 +21,17 @@ for (let i=0; i<chapter.length; i++){
         }
     }
 
-    list[i].onclick = function (){
+    let newTitle = document.createElement('div')
+    newTitle.innerHTML = title.innerHTML
+    newTitle.className = "item"
+    outlineText.appendChild(newTitle)
+
+    newTitle.onclick = function (){
         chapter[i].scrollIntoView({behavior:"smooth"});
     }
 }
+
+let list = outline.querySelectorAll(".item");
 
 outlineLine.onclick = function (){
     if (outline_status === 1){

@@ -31,4 +31,28 @@ hello_right.onclick = function (){
     bg_pointer = (bg_pointer+1) % bg_list.length
     background.style.backgroundImage = `url(../../res/${bg_list[bg_pointer]})`
 }
-// setInterval(hello_left.onclick, 5000)
+// setInterval(hello_left.onclick, 5000)    // 每隔五秒切换图片
+
+let article = mgSpace.querySelector(".article")
+let contentList = article.querySelector(".content").querySelectorAll("li")
+let textList = article.querySelector(".text").querySelectorAll("div")
+
+for (let i=0; i<contentList.length; i++){
+    contentList[i].onmouseenter = function (){
+        if (i>=textList.length)return
+        contentList[i].classList = "this"
+        textList[i].classList = "this"
+        for (let j=0; j<contentList.length; j++){
+            if (j!==i){
+                contentList[j].classList = ""
+                textList[j].classList = ""
+            }
+        }
+    }
+}
+let contentPointer = 0
+setInterval(function(){
+    if (contentPointer>=textList.length)contentPointer=0;
+    contentList[contentPointer].onmouseenter(null)
+    contentPointer++
+}, 5000)

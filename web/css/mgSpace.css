@@ -8,6 +8,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: start;
+
+    padding-bottom: 20px;
 }
 
 /* **************
@@ -45,8 +47,8 @@ body{
     display: flex;
     align-items: center;
     position: absolute;
-    top: 80%;
-    left: 85%;
+    top: 92%;
+    left: 90%;
     /*background: red;*/
 }
 .mgSpace > .hello > .select > .left{
@@ -84,8 +86,20 @@ body{
     height: 2000px;
     background: #E5F9DB;
 
+    padding: 50px 0;
+
     border-radius: 30px;
     box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.37);
+}
+.mgSpace > .main > .title{
+    width: 100%;
+    font-size: 30px;
+    text-indent: 2em;
+}
+.mgSpace > .main > .title:after{
+    width: 30px;
+    height: 30px;
+    background: red;
 }
 
 /* **************
@@ -100,61 +114,145 @@ body{
 
     margin: 50px;
 }
-
-.mgSpace > .main .circulating > .card{
+.mgSpace > .main > .circulating > .card{
     display: flex;
     align-items: center;
     justify-content: center;
 
     width: 300px;
     height: 500px;
-    /*background: #d3533c;*/
-    background-image: url("../res/collection-cover.jpg");
-    background-size: 650px;
+    background-position: center;
+    background-size: cover;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.37);
     border-radius: 0 25px;
     transition: 0.2s;
     z-index: 2;
 }
-.mgSpace > .main > .circulating > .card .line{
-    width: 20px;
-    height: 500px;
-    background: rgba(38, 199, 199);
+/*.mgSpace > .main > .circulating > .card .line{*/
+/*    width: 20px;*/
+/*    height: 500px;*/
+/*    background: rgba(38, 199, 199);*/
 
-    position: absolute;
-    z-index: 2;
-}
-.mgSpace > .main > .circulating > .card .ball{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid rgb(122, 46, 21);
+/*    position: absolute;*/
+/*    z-index: 2;*/
+/*}*/
+/*.mgSpace > .main > .circulating > .card .ball{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border-radius: 50%;*/
+/*    border: 5px solid rgb(122, 46, 21);*/
 
-    position: absolute;
-    z-index: 3;
-    transition: 0.5s;
-}
-
+/*    position: absolute;*/
+/*    z-index: 3;*/
+/*    transition: 0.5s;*/
+/*}*/
 .mgSpace > .main > .circulating > .card:hover{
     cursor: pointer;
     box-shadow:12px 10px 12px rgba(0, 0, 0, 0.46);
     transform: scale(105%);
 }
-
-.mgSpace > .main > .circulating > .card:hover .ball{
-    transform: translate(0, -250px) scale(102%);
-    background: #94ded8;
+/*.mgSpace > .main > .circulating > .card:hover .ball{*/
+/*    transform: translate(0, -250px) scale(102%);*/
+/*    background: #94ded8;*/
+/*}*/
+.mgSpace > .main > .circulating > .card:nth-child(1){
+    background-image: url("../../res/collection-cover.jpg");
+}
+.mgSpace > .main > .circulating > .card:nth-child(2){
+    background-image: url("../../res/城市-海岸-窗户.jpg");
+}
+.mgSpace > .main > .circulating > .card:nth-child(3){
+    background-image: url("../../res/princess.webp");
 }
 
-.mgSpace > .main > .circulating > .mgSpace-text{
+
+/* **************
+/* 最近文章
+/* ************** */
+.mgSpace > .main > .article{
+    width: 90%;
+    height: auto;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+}
+.mgSpace > .main > .article > .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    width: 25%;
+    height: 100%;
+    background: #A2A378;
+    padding: 30px 20px;
+    border-radius: 50px;
+    border: 2px solid #5e5e45;
+    transition: 200ms;
+}
+.mgSpace > .main > .article > .content:hover{
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.48);
+}
+.mgSpace > .main > .article > .content > li{
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    height: auto;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: 200ms;
+}
+.mgSpace > .main > .article > .content > li > a{
+    color: black;
+    text-decoration: none;
+}
+.mgSpace > .main > .article > .content > li > a:hover{
+    color: #1f6bc0;
+}
+.mgSpace > .main > .article > .content > li:hover,
+.mgSpace > .main > .article > .content > .this{
+    background: rgba(185, 185, 185, 0.37);
+    transform: translate(15px, 0);
+}
+.mgSpace > .main > .article > .content > li > span{
+    width: 0;
+    transition: width 200ms, height 500ms;
+}
+.mgSpace > .main > .article > .content > li:hover > span,
+.mgSpace > .main > .article > .content > .this > span {
+    float: left;
+    width: 5px;
+    height: 100%;
+    background: #671b1b;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.mgSpace > .main > .article > .content > .this{
 
 }
-
-.navigation{
-
+.mgSpace > .main > .article > .text{
+    width: 75%;
+    height: 100%;
+    background: #A0D8B3;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid #5b7a67;
+    margin: 30px;
+    transition: 200ms;
+}
+.mgSpace > .main > .article > .text:hover{
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.48);
+}
+.mgSpace > .main > .article > .text  p{
+    font-size: 20px;
+    text-indent: 2em;
 }
 
-.navigation ul{
-
+.mgSpace > .main > .article > .text > div{
+    display: none;
+    transition: 500ms;
 }
 
+.mgSpace > .main > .article > .text > .this{
+    display: block;
+}
