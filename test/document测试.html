@@ -14,13 +14,23 @@
         <p>第二章第一小节内容</p>
     </div>
 
-    <script src="../lib/showdown-2.1.0/dist/showdown.js">
-        const xhr = new XMLHttpRequest();
-        const converter = new showdown.Converter();
-        const markdown = "# Hello World!";
-        const html = converter.makeHtml(markdown);
-        console.log(html)
+    <button onclick="loadHTML('http://127.0.0.1/blog.html');console.log('onClick')">点击</button>
 
+    <script>
+        const box = document.querySelector(".box");
+
+        const xhr = new XMLHttpRequest();
+
+
+        function loadHTML(url){
+            xhr.onreadystatechange = function (){
+                if (this.readyState === 4 && this.status === 200){
+                    box.innerHTML = this.responseText;
+                }
+            }
+            xhr.open("GET", url, true);
+            xhr.send();
+        }
     </script>
 </body>
 </html>

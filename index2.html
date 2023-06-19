@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>欢迎来到墨空间</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/bar.css">
-    <link rel="stylesheet" href="css/mgSpace.css">
+    <title>欢迎来到墨空间！</title>
+    <link rel="stylesheet" href="web/css/base.css">
+    <link rel="stylesheet" href="web/css/mgSpace.css">
 </head>
-<body class="mgSpace">
+<body>
 
-<div class="hello">
-    <div class="title">欢迎来到墨空间</div>
-    <video autoplay loop muted><source src="res/hello.mp4"></video>
+<div class="mgSpace">
+    <div class="background"></div>
+    <div class="hello">
+        <div class="title">欢迎来到墨空间</div>
+        <div class="select">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="title">我的文集</div>
+        <div class="circulating">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+
+        <div class="title">最近文章</div>
+        <div class="article"></div>
+    </div>
 </div>
 
-<div class="circulating">
-    <div class="left"></div>
-    <div class="right"></div>
-
-    <label>
-        <input type="radio" name="circul" value="1">
-    </label>
-    <label>
-        <input type="radio" name="circul" value="2">
-    </label>
-    <div class="card">1</div>
-    <div class="card">1</div>
+<div class="copyright">
+    copy-right 2003-2023 hereismg.top 墨格版权所有
 </div>
 
 <div class="bar">
@@ -38,16 +45,16 @@
                 <li>制作指南</li>
             </ul>
         </li>
-        <li></li>
     </ul>
-
-    <div class="ball"></div>
-
+    <div class="ball"><img src="../res/home.svg" alt=""></div>
+    <div class="line"></div>
     <ul class="right">
         <li>关于</li>
         <li>其他</li>
     </ul>
 </div>
 
+<script src="web/js/base.js"></script>
+<script src="web/js/mgSpace.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 }
 
 .collection .cover img{
-    content: url("../res/road.jpg");
+    content: url("respg");
     display: block;
     height: 250px;
     width: 100%;
@@ -36,7 +36,7 @@
 }
 
 .collection .information img{
-    content: url("../res/flower.jpg ");
+    content: url("res.jpg ");
     display: block;
     width: 100px;
     height: 100px;

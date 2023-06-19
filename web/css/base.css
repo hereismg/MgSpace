@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "思源黑体 CN", serif;
+}
+
+body, html{
+    height: 100%;
+    /*background: #E5F9DB;*/
+    /*background: #87dad8;*/
+}
+
 .mimesic-button{
     display: flex;
     justify-content: center;
@@ -22,6 +34,7 @@
 .bar{
     display: flex;
     align-items: center;
+    justify-content: center;
 
     width: auto;
     height: 100px;
@@ -35,39 +48,53 @@
 
     z-index: 100;
 }
-
 .bar ul{
     list-style: none;
 }
-
-.bar > ul > li > ul{
-    display: none;
-}
-
 .bar > .ball{
     width: 120px;
     height: 120px;
-    border-radius: 30px;
-    background: #DF7857;
+    border-radius: 40px;
+    background: #83764F;
+
     box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);
     z-index: 1;
+    transition: 200ms;
+    cursor: pointer;
 }
+.bar > .ball > img{
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0 auto;
+    transition: 200ms;
+}
+.bar > .ball:hover img{
+    transform: translate(-50%, -50%) scale(110%);
+}
 .bar > ul{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     width: auto;
     height: 40px;
-    background: #617143;
+    background: #bebd76;
 
     padding: 3px 10px;
+    transition: 200ms;
+    box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.38);
 }
-
 .bar > ul > li{
+    text-align: center;
     font-size: 25px;
-    width: auto;
+    width: 4em;
 
     padding: 0 10px;
     border-radius: 5px;
@@ -76,26 +103,39 @@
 
     transition: 100ms;
 }
-
-.bar > ul > li:hover{
+.bar > ul > li > ul{
+    display: none;
+    position: absolute;
+    background: inherit;
+}
+.bar > ul > li:hover {
     cursor: pointer;
     /*background: #485434;*/
     background: inherit;
     box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);
     /*transform: scale(105%) translate(0, -10px);*/
 }
-
-.bar > ul > li:hover ul{
-    display: block;
+.bar > ul > li:hover:before{
+    content: "";
+    background: #000;
+    height: 3px;
+    width: 3px;
 }
+.bar > ul > li:hover > ul{
+    display: block;
+    transform: translate(0, -140px);
+}
+.bar > ul > li > ul > li:hover{
+    box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);
 
+}
 .bar > .left{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
-
 .bar > .right{
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
 }
+
