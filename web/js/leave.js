@@ -57,7 +57,6 @@ class LeaveBranch{
         replay_btn.innerText = "回复"
         replay_btn.onclick = function (){
             hide(this, tree.tree.length)
-            console.log(1)
         }
 
         root.element.querySelector(".tail").appendChild(replay_btn)
@@ -143,15 +142,14 @@ function submitReplay(element){
 
     const leaf = new LeaveLeaf(replay_user.value, replay_email.value, replay_text.value)
     const number = replay_window.parentNode.getAttribute("number")
-    const branch = tree.tree[number].append(leaf)
+    tree.tree[number].append(leaf)
 }
 
-function hide(element, num){
+function hide(element){
     const replay_window = element.parentNode.parentNode.querySelector(".replay-window")
     if (element.classList.toggle("hide")){
         replay_window.style.display = "flex"
     }else{
         replay_window.style.display = "none"
     }
-    console.log(2)
 }
