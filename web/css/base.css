@@ -86,6 +86,7 @@ body{
 .bar > .ball:hover img{
     transform: translate(-50%, -50%) scale(110%);
 }
+
 .bar > ul{
     display: flex;
     align-items: center;
@@ -109,34 +110,24 @@ body{
 
     margin: 0 5px;
 
-    transition: 100ms;
-}
-.bar > ul > li > ul{
-    display: none;
-    position: absolute;
-    background: inherit;
+    transition: 200ms;
 }
 .bar > ul > li:hover {
-    cursor: pointer;
-    /*background: #485434;*/
-    background: rgba(147, 150, 142, 0.21);
-    /*box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);*/
-    /*transform: scale(105%) translate(0, -10px);*/
+     cursor: pointer;
+     background: rgba(93, 93, 93, 0.21);
+ }
+/*.bar > ul > li:hover > .sub{*/
+/*    display: block;*/
+/*    transform: translate(0, -280px);*/
+/*}*/
+.bar > ul > li > .sub{
+    display: none;
+    position: absolute;
+    background: red;
 }
-.bar > ul > li:hover:before{
-    content: "";
-    background: #000;
-    height: 3px;
-    width: 3px;
-}
-.bar > ul > li:hover > ul{
-    display: block;
-    transform: translate(0, -140px);
-}
-.bar > ul > li > ul > li:hover{
-    box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);
-
-}
+/*.bar > ul > li > .sub > li:hover{*/
+/*    box-shadow: 0 0 10px 1px rgba(3, 3, 3, 0.67);*/
+/*}*/
 .bar > .left{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;

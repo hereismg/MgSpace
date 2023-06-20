@@ -273,6 +273,20 @@ body{
     margin: 20px 0;
 }
 
+.mgSpace > .main > .leaveWord > .wall > textarea{
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+}
+
+.mgSpace > .main > .leaveWord > .wall > .biu{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    background: red;
+    transition: 1000ms;
+}
+
 .mgSpace > .main > .leaveWord > label{
     display: flex;
     align-items: center;

@@ -26,11 +26,11 @@ hello_left.onclick = function (){
     }else{
         bg_pointer = bg_list.length-1;
     }
-    background.style.backgroundImage = `url(../../res/${bg_list[bg_pointer]})`
+    background.style.backgroundImage = `url(res/${bg_list[bg_pointer]})`
 }
 hello_right.onclick = function (){
     bg_pointer = (bg_pointer+1) % bg_list.length
-    background.style.backgroundImage = `url(../../res/${bg_list[bg_pointer]})`
+    background.style.backgroundImage = `url(res/${bg_list[bg_pointer]})`
 }
 // setInterval(hello_left.onclick, 5000)    // 每隔五秒切换图片
 
@@ -73,6 +73,12 @@ leaveWordList =[
     "这是第亖段留言。",
 ]
 
-setInterval(function(){
+const wall = document.querySelector(".wall")
 
-}, 1000)
+function sendBiu(biuText){
+    let biu = document.createElement("div")     // 创建一条弹幕
+    biu.innerText = biuText
+    biu.style.transition = "1000ms"
+    biu.style.positio
+    wall.appendChild(biu)
+}

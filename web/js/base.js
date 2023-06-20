@@ -26,3 +26,11 @@ ball.onclick = function (){
         }, 10);
     }
 }
+
+function linkToMgSpace(){
+    window.location.href = "../../../index.html"
+}
+
+function linkTo(url){
+    window.location.href = url
+}

@@ -29,7 +29,7 @@
         <div class="title">精选文章</div>
         <div class="article">
             <ol class="content">
-                <li class="this"><span></span><a href="web/html/blogs/AI.html">AI还需要理论吗？</a></li>
+                <li class="this"><span></span><a href="web/html/blogs/AI还需要理论吗？.html">AI还需要理论吗？</a></li>
                 <li><span></span><a href="web/html/blogs/价值论、无价值论和反价值论.html">价值论、无价值论和反价值论</a></li>
                 <li><span></span><a href="web/html/blogs/人生难道就只是一场赛跑？.html">人生难道就只是一场赛跑？</a></li>
                 <li><span></span><a href="web/html/blogs/清晰的思维障碍.html">清晰的思维障碍</a></li>
@@ -57,10 +57,15 @@
 
         <div class="title">留言墙</div>
         <div class="leaveWord">
-            <div class="wall"></div>
+            <label class="wall">
+                <textarea></textarea>
+            </label>
+            <!--            <div class="wall">-->
+<!--                <div class="biu">留言</div>-->
+<!--            </div>-->
             <label>
                 <label>昵称：<input type="text"></label>
-                <label>留言：<input type="text"></label>
+                <label>邮箱：<input type="text"></label>
                 <button>发送！</button>
             </label>
         </div>
@@ -73,20 +78,14 @@
 
 <div class="bar">
     <ul class="left">
-        <li>主页</li>
-        <li>文集
-            <ul>
-                <li>太阳升起时的样子</li>
-                <li>花生蛋糕</li>
-                <li>制作指南</li>
-            </ul>
-        </li>
+        <li onclick="linkTo('index.html')">主页</li>
+        <li onclick="linkTo('web/html/allCollection.html')">文集</li>
     </ul>
-    <div class="ball"><img src="../res/home.svg" alt=""></div>
+    <div class="ball"><img src="res/home.svg" alt=""></div>
     <div class="line"></div>
     <ul class="right">
-        <li>关于</li>
-        <li>其他</li>
+        <li onclick="linkTo('web/html/about.html')">关于</li>
+        <li onclick="linkTo('web/html/leave.html')">留言</li>
     </ul>
 </div>
 
