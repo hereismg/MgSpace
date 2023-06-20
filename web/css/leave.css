@@ -19,7 +19,180 @@ body{
     align-items: center;
 }
 
-.leave > label > textarea{
-    width: 800px;
-    height: 600px;
+.leave > .tree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.leave > .tree > .branch{
+    display: flex;
+    flex-direction: column;
+
+    width: 85%;
+    height: auto;
+    background: #d4d79c;
+
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.leave > .tree > .branch > .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leave > .tree > .branch > .text{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0 10px 5%;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.leave > .tree > .branch > .tail{
+
+}
+
+.leave > .tree > .branch > .tail > .date{
+    float: left;
+}
+.leave > .tree > .branch > .tail > .replay-btn{
+    float: right;
+}
+.leave > .tree > .branch > .tail > .replay-btn:hover{
+    cursor: pointer;
+    color: cornflowerblue;
+}
+.leave > .tree > .branch > .tail > .thumbs-up{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.leave > .tree > .branch > .tail > .thumbs-up:hover{
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+.leave > .tree > .branch > .replay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: auto;
+    background: #70b996;
+    padding: 15px;
+    border-left: 5px solid #034f29;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 5px 0 5px 8%;
+}
+.leave > .tree > .branch > .replay > .leaf{
+    display: flex;
+    flex-direction: column;
+
+    width: 98%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    background: #487964;
+}
+.leave > .tree > .branch > .replay > .leaf:hover{
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.28);
+}
+.leave > .tree > .branch > .replay > .leaf > .head{
+    display: flex;
+    justify-content: space-between;
+}
+.leave > .tree > .branch > .replay > .leaf > .text{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0 10px 5%;
+    background: rgba(255, 255, 255, 0.53);
+}
+
+.leave > .tree > .branch > .replay > .leaf > .tail > .date{
+    float: left;
+}
+
+.leave > .tree > .branch > .replay > .leaf > .tail > .thumbs-up{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.leave > .tree > .branch > .replay > .leaf > .tail > .thumbs-up:hover{
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+.leave > .create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    background: #EDE9D5;
+    border-radius: 10px;
+}
+
+.leave > .create > label > textarea{
+    resize: vertical;
+
+    width: 600px;
+    height: 100px;
+    background: #c7c3b5;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.leave > .create > .head input{
+    background: #c7c3b5;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.leave > .tree > .branch > .replay-window{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    width: 85%;
+    height: auto;
+    background: #b7b986;
+
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    margin: 20px auto 20px 10%;
+}
+
+.leave > .tree > .branch > .replay-window > label > textarea{
+    resize: vertical;
+
+    width: 600px;
+    height: 100px;
+    background: #ffffff;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.leave > .tree > .branch > .replay-window > .head input{
+    background: #ffffff;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
 }
