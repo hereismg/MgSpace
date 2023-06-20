@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #E5F9DB;
 }
 
-.collection .cover{
+.collection >    .cover{
     width: 100%;
 }
 
-.collection .cover img{
+.collection > .cover > img{
     content: url("../../res/road.jpg");
     display: block;
     height: 250px;
@@ -16,13 +17,13 @@
     object-fit: cover;
 }
 
-.collection .cover .line{
+.collection > .cover > .line{
     width: 100%;
     height: 30px;
     background: linear-gradient(#28293f, rgba(255, 255, 255, 0));
 }
 
-.collection .information{
+.collection > .information{
     width: 50%;
     background: #abc5d3;
     padding-right: 30px;
@@ -35,7 +36,7 @@
 
 }
 
-.collection .information img{
+.collection > .information > img{
     content: url("../../res/flower.jpg");
     display: block;
     width: 100px;
@@ -49,36 +50,35 @@
     transition: 0.2s;
 }
 
-.collection .information img:hover{
+.collection > .information > img:hover{
     transform: scale(101%) translate(10px, -65px);
 }
 
-.collection .information .title{
+.collection > .information > .title{
     font-size: 40px;
     font-weight: bold;
     font-family: "思源黑体 CN", serif;
     transform: translate(10px, -30px);
 }
 
-.collection .information .intro{
+.collection > .information > .intro{
     font-size: 20px;
     font-family: "思源黑体 CN", serif;
     text-indent: 2em;
     transform: translate(10px, -10px);
 }
 
-.collection .list{
+.collection > .list{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.collection .list .item{
+.collection > .list > .item{
     height: 200px;
     width: 50%;
     /*background: #134393;*/
-    background-image: url("");
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -91,25 +91,143 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.collection .list .item .title{
-    font-size: 20px;
+.collection > .list > .item:nth-child(3n+1){
+    background-image: url("../../res/img (1).jpg");
+    background-position: 50% 25%;
+    background-size: 100%;
+}
+.collection > .list > .item:nth-child(3n+2){
+    background-image: url("../../res/img (2).jpg");
+    background-position: 50% 60%;
+    background-size: 100%;
+}
+.collection > .list > .item:nth-child(3n+3){
+    background-image: url("../../res/img (3).jpg");
+    background-position: 50% 60%;
+    background-size: 100%;
+}
+/*.collection > .list > .item:nth-child(5n+4){*/
+/*    background-image: url("../../res/img (4).jpg");*/
+/*    background-position: 50% 50%;*/
+/*    background-size: 20%;*/
+/*}*/
+/*.collection > .list > .item:nth-child(5n+5){*/
+/*    background-image: url("../../res/img (5).jpg");*/
+/*    background-position: 50% 50%;*/
+/*    background-size: 30%;*/
+/*}*/
+.collection > .list > .item > .title{
+    font-size: 30px;
     font-family: "思源黑体 CN", serif;
     transition: 0.2s;
+
+    background: rgba(194, 186, 176, 0.49);
+    padding: 5px;
+    border-radius: 15px;
 }
 
-.collection .list .item .index{
+.collection > .list > .item > .index{
     font-size: 20px;
     font-family: "思源黑体 CN", serif;
 }
 
-.collection .list .item:hover{
+.collection > .list > .item:hover{
     /*box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.37), inset 1px 1px 15px #ffffff;*/
     box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.15), 2px 1px 10px rgba(255, 255, 255, 0.05);
 
     transform: scale(99%) translate(0, 2px);
     cursor: pointer;
 }
-.collection .list .item:hover .title{
+.collection > .list > .item:hover > .title{
     /*text-indent: 1em;*/
+}
+
+.hereismg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 300px;
+    height: 600px;
+    background: rgba(141, 138, 138, 0.44);
+    border-radius: 50px;
+}
+
+.hereismg > .cover{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url("../../res/火柴人2.png");
+    background-size: cover;
+    border: 2px solid #1b815a;
+    margin: 50px 0;
+    transition: 200ms;
+}
+
+.hereismg > .cover:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.hereismg > .title{
+    font-size: 30px;
+}
+
+.hereismg > .data{
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+}
+
+.hereismg > .data > div{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0;
+}
+.hereismg > .data > div:hover{
+    background: rgba(125, 201, 148, 0.47);
+}
+
+.hereismg > .data p {
+    text-align: center;
+}
+
+.hereismg > .other{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+    margin: 50px 0;
+}
+
+.hereismg > .other > div{
+    width: 50px;
+    height: 50px;
+    transition: 200ms;
+}
+
+.hereismg > .other > div:hover{
+    transform: scale(110%);
+}
+
+.hereismg > .other > div:nth-child(1){
+    background-image: url("../../res/bilibili.svg");
+    background-size: 50px 50px;
+    background-position: center;
+}
+
+.hereismg > .other > div:nth-child(2){
+    background-image: url("../../res/weibo.svg");
+    background-size: 50px 50px;
+    background-position: center;
+}
+
+.hereismg > .other > div:nth-child(3){
+    background-image: url("../../res/social-tieba.svg");
+    background-size: 50px 50px;
+    background-position: center;
 }

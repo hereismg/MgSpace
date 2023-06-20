@@ -1,4 +1,5 @@
 let mgSpace = document.querySelector(".mgSpace")
+let main = document.querySelector(".main")
 let hello = mgSpace.querySelector(".hello")
 let background = mgSpace.querySelector(".background")
 
@@ -56,3 +57,22 @@ setInterval(function(){
     contentList[contentPointer].onmouseenter(null)
     contentPointer++
 }, 5000)
+
+
+const cardList = main.querySelector(".circulating").querySelectorAll(".card")
+for (let i=0; i<cardList.length; i++){
+    cardList[i].onclick = function (){
+        window.location.href = "web/html/collection/collection.html"
+    }
+}
+
+leaveWordList =[
+    "这是第一段留言。",
+    "这是第二段留言。",
+    "这是第三段留言。",
+    "这是第亖段留言。",
+]
+
+setInterval(function(){
+
+}, 1000)

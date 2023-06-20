@@ -112,7 +112,7 @@ body{
     width: 16%;
     /*height: 70%;*/
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.53);
-    background: #1b815a;
+    background: rgba(98, 136, 126, 0.49);
     position: fixed;
     top: 30%;
     left: 80%;
@@ -157,6 +157,96 @@ body{
 
 .outline > .text > .item:hover, .current-chapter{
     cursor: pointer;
-    background: #7dc994;
+    background: #46c46b;
     transform: translate(15px, 0);
+}
+
+.hereismg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 300px;
+    height: 600px;
+    background: rgba(141, 138, 138, 0.44);
+    border-radius: 50px;
+}
+
+.hereismg > .cover{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url("../../res/火柴人2.png");
+    background-size: cover;
+    border: 2px solid #1b815a;
+    margin: 50px 0;
+    transition: 200ms;
+}
+
+.hereismg > .cover:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.hereismg > .title{
+    font-size: 30px;
+}
+
+.hereismg > .data{
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+}
+
+.hereismg > .data > div{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0;
+}
+.hereismg > .data > div:hover{
+    background: rgba(125, 201, 148, 0.47);
+}
+
+.hereismg > .data p {
+    text-align: center;
+}
+
+.hereismg > .other{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+    margin: 50px 0;
+}
+
+.hereismg > .other > div{
+    width: 50px;
+    height: 50px;
+    transition: 200ms;
+}
+
+.hereismg > .other > div:hover{
+    transform: scale(110%);
+}
+
+.hereismg > .other > div:nth-child(1){
+    background-image: url("../../res/bilibili.svg");
+    background-size: 50px 50px;
+    background-position: center;
+}
+
+.hereismg > .other > div:nth-child(2){
+    background-image: url("../../res/weibo.svg");
+    background-size: 50px 50px;
+    background-position: center;
+}
+
+.hereismg > .other > div:nth-child(3){
+    background-image: url("../../res/social-tieba.svg");
+    background-size: 50px 50px;
+    background-position: center;
 }

@@ -8,10 +8,6 @@
 </head>
 <body>
 
-<div class="bar">
-    
-</div>
-
 <div class="collection">
     <div class="cover">
         <img src="" alt="">
@@ -68,13 +64,56 @@
         </div>
     </div>
 </div>
-<script>
-    let item = document.querySelectorAll(".item");
-    for (let i=0; i<item.length; i++){
-        item[i].onclick = function (){
-            console.log("嗨！")
-        }
-    }
-</script>
+
+<div class="hereismg">
+    <div class="cover" onclick="linkToMgSpace()"></div>
+    <div class="title">墨格</div>
+    <div class="info">好奇这个世界。爱上这个世界。</div>
+    <div class="data">
+        <div>
+            <p>博客</p>
+            <p>30</p>
+        </div>
+        <div>
+            <p>文集</p>
+            <p>6</p>
+        </div>
+        <div>
+            <p>标签</p>
+            <p>13</p>
+        </div>
+    </div>
+    <div class="other">
+        <div onclick="linkTo('http://www.bilibili.com')"></div>
+        <div onclick="linkTo('http://www.weibo.com')"></div>
+        <div onclick="linkTo('https://tieba.baidu.com/')"></div>
+    </div>
+</div>
+
+<div class="copyright">
+    copy-right 2003-2077 hereismg.top 墨格版权所有
+</div>
+
+<div class="bar">
+    <ul class="left">
+        <li>主页</li>
+        <li>文集
+            <ul>
+                <li>太阳升起时的样子</li>
+                <li>花生蛋糕</li>
+                <li>制作指南</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="ball"><img src="../../../res/home.svg" alt=""></div>
+    <div class="line"></div>
+    <ul class="right">
+        <li>关于</li>
+        <li>其他</li>
+    </ul>
+</div>
+
+<script src="../../js/base.js"></script>
+<script src="../../js/collection.js"></script>
 </body>
 </html>

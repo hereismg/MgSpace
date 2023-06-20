@@ -80,3 +80,11 @@ window.addEventListener('scroll', function (){
 
 setOutlinePos_atTop();
 list[0].className = "current-chapter"
+
+function linkToMgSpace(){
+    window.location.href = "../../../index.html"
+}
+
+function linkTo(url){
+    window.location.href = url
+}
