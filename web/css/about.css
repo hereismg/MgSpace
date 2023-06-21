@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../res/tommao-wang-P8UqSj4hTUg-unsplash.jpg");
+    background-size: cover;
+}
+
+.about{
+    width: 60%;
+    background: rgba(229, 249, 219, 0.48);
+    padding: 30px;
+    border-radius: 50px;
+    margin: 90px 0;
+}
+
+.about > .text > p{
+    font-size: 20px;
+    text-indent: 2em;
+    margin: 0.25em;
+}

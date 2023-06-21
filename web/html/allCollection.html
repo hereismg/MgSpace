@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的文集</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/allCollection.css">
+</head>
+<body>
+
+<div class="collection">
+    <div class="cover">
+        <img src="" alt="">
+<!--        <div class="line"></div>-->
+    </div>
+
+    <div class="information">
+        <img src="" alt="">
+        <div class="title">我的文集</div>
+        <div class="intro">这里存放着我的所有文集。在我的博客中，每篇文章和每篇文集是相互独立的，不存在包含关系。它们之间只是存在链接。</div>
+        <hr>
+    </div>
+
+    <div class="list">
+        <div class="item">
+            <div class="title" onclick="linkTo('collection/collection.html')">太阳升起来的样子</div>
+            <div class="index">1</div>
+        </div>
+        <div class="item">
+            <div class="title">花生蛋糕</div>
+            <div class="index">2</div>
+        </div>
+        <div class="item">
+            <div class="title">Java语言基础</div>
+            <div class="index">3</div>
+        </div>
+        <div class="item">
+            <div class="title">海琛语言开发日志</div>
+            <div class="index">4</div>
+        </div>
+        <div class="item">
+            <div class="title">数据结构</div>
+            <div class="index">5</div>
+        </div>
+        <div class="item">
+            <div class="title">计算机组成原理笔记</div>
+            <div class="index">6</div>
+        </div>
+    </div>
+</div>
+
+<div class="hereismg">
+    <div class="cover" onclick="linkToMgSpace()"></div>
+    <div class="title">墨格</div>
+    <div class="info">好奇这个世界。爱上这个世界。</div>
+    <div class="data">
+        <div>
+            <p>博客</p>
+            <p>30</p>
+        </div>
+        <div>
+            <p>文集</p>
+            <p>6</p>
+        </div>
+        <div>
+            <p>标签</p>
+            <p>13</p>
+        </div>
+    </div>
+    <div class="other">
+        <div onclick="linkTo('http://www.bilibili.com')"></div>
+        <div onclick="linkTo('http://www.weibo.com')"></div>
+        <div onclick="linkTo('https://tieba.baidu.com/')"></div>
+    </div>
+</div>
+
+<div class="copyright">
+    copy-right 2003-2077 hereismg.top 墨格版权所有
+</div>
+
+<div class="bar">
+    <ul class="left">
+        <li onclick="linkTo('../../index.html')">主页</li>
+        <li onclick="linkTo('allCollection.html')">文集</li>
+    </ul>
+    <div class="ball"><img src="../../res/home.svg" alt=""></div>
+    <div class="line"></div>
+    <ul class="right">
+        <li onclick="linkTo('about.html')">关于</li>
+        <li onclick="linkTo('leave.html')">留言</li>
+    </ul>
+</div>
+
+<script src="../js/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/leave.css">
+</head>
+<body>
+
+<div class="leave">
+    <div class="tree">
+<!--        <div class="branch">-->
+<!--            <div class="head">-->
+<!--                <div class="name">墨格</div>-->
+<!--                <div class="email">hereismg@163.com</div>-->
+<!--            </div>-->
+<!--            <div class="text">欢迎大家给我留言！</div>-->
+<!--            <div class="tail">-->
+<!--                <div class="date">2023-6-20 20:25</div>-->
+<!--                <div class="thumbs-up" onclick="like(this)"><img src="../../res/点赞.svg" alt="" width="18px"><span>233</span></div>-->
+<!--                <div class="replay-btn" onclick="hide(this, 0)">回复</div>-->
+<!--            </div>-->
+
+<!--            <div class="replay-window">-->
+<!--                <div class="head">-->
+<!--                    <label>昵称：<input type="text" name="replay_user"></label>-->
+<!--                    <label>邮箱：<input type="text" name="replay_email"></label>-->
+<!--                    <button onclick="submitReplay(this)">提交</button>-->
+<!--                </div>-->
+<!--                <label>-->
+<!--                    <textarea name="replay_text"></textarea>-->
+<!--                </label>-->
+<!--            </div>-->
+
+
+<!--            <div class="replay">-->
+<!--                <div class="leaf">-->
+<!--                    <div class="head">-->
+<!--                        <div class="name">无邪</div>-->
+<!--                        <div class="email">wuxiec@163.com</div>-->
+<!--                    </div>-->
+<!--                    <div class="text">这是一条回复</div>-->
+<!--                    <div class="tail">-->
+<!--                        <div class="date">2023-6-20 20:50</div>-->
+<!--                        <div class="thumbs-up" onclick="like(this)"><img src="../../res/点赞.svg" alt="" width="18px"><span>233</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="leaf">-->
+<!--                    <div class="head">-->
+<!--                        <div class="name">无邪</div>-->
+<!--                        <div class="email">wuxiec@163.com</div>-->
+<!--                    </div>-->
+<!--                    <div class="text">第二条留言</div>-->
+<!--                    <div class="tail">-->
+<!--                        <div class="date">2023-6-20 20:55</div>-->
+<!--                        <div class="thumbs-up" onclick="like(this)"><img src="../../res/点赞.svg" alt="" width="18px"><span>233</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+    <div class="create" id="branch_creater">
+        <div class="head">
+            <label>昵称：<input type="text" name="submit_user"></label>
+            <label>邮箱：<input type="text" name="submit_email"></label>
+            <button onclick="submitBranch()">提交</button>
+        </div>
+        <label>
+            <textarea name="submit_text"></textarea>
+        </label>
+    </div>
+</div>
+
+<div class="copyright">
+    copy-right 2003-2077 hereismg.top 墨格版权所有
+</div>
+
+<div class="bar">
+    <ul class="left">
+        <li onclick="linkTo('../../index.html')">主页</li>
+        <li onclick="linkTo('allCollection.html')">文集</li>
+    </ul>
+    <div class="ball"><img src="../../res/home.svg" alt=""></div>
+    <div class="line"></div>
+    <ul class="right">
+        <li onclick="linkTo('about.html')">关于</li>
+        <li onclick="linkTo('leave.html')">留言</li>
+    </ul>
+</div>
+
+<script src="../js/leave.js"></script>
+<script src="../js/base.js"></script>
+</body>
+</html>
